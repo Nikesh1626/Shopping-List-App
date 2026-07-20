@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Capability for Adding an Item to a Shopping List via Google Assistant -->
+    <capability android:name="actions.intent.ADD_ITEM_TO_SHOPPING_LIST">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nikeshparihar.smartcart"
+            android:targetClass="com.nikeshparihar.smartcart.MainActivity">
+
+            <!-- Item name parameter -->
+            <parameter
+                android:name="shoppingList.itemList.name"
+                android:key="item_name" />
+
+            <!-- Target list name parameter (Optional) -->
+            <parameter
+                android:name="shoppingList.name"
+                android:key="list_name" />
+        </intent>
+    </capability>
+
+    <!-- Generic fallback capability -->
+    <capability android:name="actions.intent.CREATE_THING">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nikeshparihar.smartcart"
+            android:targetClass="com.nikeshparihar.smartcart.MainActivity">
+            <parameter
+                android:name="thing.name"
+                android:key="item_name" />
+        </intent>
+    </capability>
+
+</shortcuts>

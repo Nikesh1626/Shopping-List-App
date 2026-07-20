@@ -1,0 +1,57 @@
+﻿> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugKotlin FAILED
+.\gradlew.bat : e: file:///C:/Users/laxma/Desktop/Nikesh
+%20Parihar/Android/Udemy/app/src/main/java/com/example/s
+hoppinglist/MainActivity.kt:35:5 'onNewIntent' 
+overrides nothing.
+At line:1 char:1
++ .\gradlew.bat compileDebugKotlin > log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e: file:// 
+   /C:/U...rrides nothing.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+e: file:///C:/Users/laxma/Desktop/Nikesh%20Parihar/Andro
+id/Udemy/app/src/main/java/com/example/shoppinglist/Main
+Activity.kt:36:27 Argument type mismatch: actual type 
+is 'android.content.Intent?', but 
+'android.content.Intent' was expected.
+e: file:///C:/Users/laxma/Desktop/Nikesh%20Parihar/Andro
+id/Udemy/app/src/main/java/com/example/shoppinglist/Shop
+pingList.kt:365:2 Syntax error: imports are only 
+allowed in the beginning of file.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotli
+n.compilerRunner.GradleCompilerRunnerWithWorkers$GradleK
+otlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log 
+output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2s
+14 actionable tasks: 1 executed, 13 up-to-date
